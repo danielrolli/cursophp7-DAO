@@ -31,12 +31,19 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadById(3);
+//$usuario->update("auxiliar","!@#$%");
+//echo $usuario;
+
 $usuario = new Usuario();
 
-$usuario->loadById(3);
+$usuario->loadById(2);
 
-$usuario->update("auxiliar","!@#$%");
+$usuario->delete();
 
 echo $usuario;
+
 
 ?>	
