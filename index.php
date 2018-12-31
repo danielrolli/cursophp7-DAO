@@ -2,6 +2,20 @@
 
 require_once("config.php");
 
+$sql = new Sql();
+
+
+$root = new Usuario();
+
+$root->loadbyId(3);
+
+echo $root;
+
+//$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+//echo json_encode($usuarios);
+
+
+
 //carrega um usuaruio
 //$root = new Usuario();
 //$root -> loadbyId(1);
@@ -37,13 +51,11 @@ require_once("config.php");
 //$usuario->update("auxiliar","!@#$%");
 //echo $usuario;
 
-$usuario = new Usuario();
-
-$usuario->loadById(2);
-
-$usuario->delete();
-
-echo $usuario;
+//deletar um usuário
+//$usuario = new Usuario();
+//$usuario->loadById(2);
+//$usuario->delete();
+//echo $usuario;
 
 
 ?>	
