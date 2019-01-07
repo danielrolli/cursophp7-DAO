@@ -35,20 +35,36 @@ require_once("config.php");
 
 //carrega um usuário usando o login e senha
 
-$usuario = new Usuario();
-$usuario->login("daniel","123456");
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("daniel","123456");
+//echo $usuario;
 
 //criando um novo usuário
-//$aluno = new Usuario("aluno","@lun0");
-//$aluno->insert();
-//echo $aluno;
+
+	//sem construct:
+	//$aluno = new Usuario();
+
+	//$aluno->setDeslogin("aluno");
+	//$aluno->setDessenha("@lun0");
+
+	//$aluno->insert();
+
+	//echo $aluno;
+
+	//com construct:
+	
+	//$aluno = new Usuario("aluno","@alun0");
+
+	//$aluno->insert();
+
+	//echo $aluno;
+
 
 //alterar um usuario
-//$usuario = new Usuario();
-//$usuario->loadById(3);
-//$usuario->update("auxiliar","!@#$%");
-//echo $usuario;
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->update("auxiliar","!@#$%");
+echo $usuario;
 
 //deletar um usuário
 //$usuario = new Usuario();

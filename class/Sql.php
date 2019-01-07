@@ -6,7 +6,7 @@
 
 		public function __construct(){
 
-			$this->conn = new PDO("sqlsrv:Database=dbphp7_2;server=localhost;","sa","root");
+			$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7_2;","root","");
 
 		}
 
